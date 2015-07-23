@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.077"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="@drawable/btn_note_slidemenu"
+            android:id="@+id/btn_note_slidemenu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="GHI CHÚ NGUYÊN LIỆU"
+            android:id="@+id/textView9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.923"
+        android:background="#f2f2f2"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="( Trống )"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/tv_note_empty"
+            android:visibility="gone" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/lv_note" />
+
+    </LinearLayout>
+</LinearLayout>

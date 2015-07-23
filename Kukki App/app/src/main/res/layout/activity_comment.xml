@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_height="59dp">
+
+            <Button
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:background="@drawable/btn_comment_back"
+                android:id="@+id/btn_comment_back" />
+<!--
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_comment_back"
+                android:id="@+id/img_comment_back" />
+                -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Có tất cả 4 người thích món ăn này"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:id="@+id/tv_comment_total_like" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="49dp"
+            android:layout_marginRight="49dp"
+            android:background="#95a5a6"
+            android:layout_height="1dp"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.9"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv_comment" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical"
+            android:layout_height="0dp">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:background="#95a5a6"
+                android:layout_marginLeft="49dp"
+                android:layout_marginRight="49dp"
+                android:layout_height="1dp"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!--
+                <ImageView
+                    android:layout_width="59dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_comment_reload"
+                    android:id="@+id/img_comment_reload" />
+                    -->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.122"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_comment_reload"
+                        android:text=""
+                        android:id="@+id/btn_comment_reload" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.755"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="fill_parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="8"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:minLines="1"
+                        android:gravity="top|left"
+                        android:textColor="#000000"
+                        android:maxLines="10"
+                        android:hint="Viết bình luận..."
+                        android:id="@+id/edt_comment" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.123"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_comment_send"
+                        android:text=""
+                        android:id="@+id/btn_comment_send" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

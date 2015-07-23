@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="58dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_receipt_back"
+                        android:background="@drawable/receipt_back"
+                        android:layout_marginLeft="19dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHI TIẾT"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/textView8"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_receipt_back"
+                        android:layout_toEndOf="@+id/img_receipt_back" />
+<!--
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_receipt_download"
+                        android:background="@drawable/receipt_download"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginEnd="28dp" />
+                        -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_receipt_edit"
+                        android:background="@drawable/receipt_edit"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginEnd="28dp"
+                        android:visibility="visible" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_receipt_download"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/receipt_download"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_receipt_edit"
+                        android:layout_toStartOf="@+id/img_receipt_edit" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_receipt_schedule"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/receipt_schedule"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_receipt_download"
+                        android:layout_toStartOf="@+id/img_receipt_download" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scrollView2" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="SINH TỐ CHANH DƯA HẤU"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#000000"
+                                        android:id="@+id/tv_receipt_title"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Minh Tri Do"
+                                        android:layout_marginBottom="8dp"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#f07547"
+                                        android:id="@+id/tv_receipt_artist"
+                                        android:layout_below="@+id/tv_receipt_title"
+                                        android:layout_alignLeft="@+id/tv_receipt_title"
+                                        android:layout_alignStart="@+id/tv_receipt_title" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="20 phút"
+                                        android:textSize="12sp"
+                                        android:id="@+id/tv_receipt_time"
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginRight="8dp"
+                                        />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView3"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/clock"
+                                        android:layout_alignTop="@+id/tv_receipt_time"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/tv_receipt_time"
+                                        android:layout_toStartOf="@+id/tv_receipt_time" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_height="wrap_content">
+                                <com.linhminhoo.kukki.Model.ImageNetwork.FeedImageView
+                                    android:id="@+id/feedImage_receipt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:background="#ffffff"
+                                    android:visibility="visible"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/img_receipt_like"
+                                        android:background="@drawable/home_like"
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_marginLeft="23dp"
+                                        android:layout_marginStart="20dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="280"
+                                        android:textSize="12sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/tv_receipt_total_like"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/img_receipt_like"
+                                        android:layout_toEndOf="@+id/img_receipt_like" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/img_receipt_comment"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/home_comment"
+                                        android:layout_toRightOf="@+id/tv_receipt_total_like"
+                                        android:layout_toEndOf="@+id/tv_receipt_total_like" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1850"
+                                        android:textSize="12sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/tv_receipt_total_comment"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/img_receipt_comment"
+                                        android:layout_toEndOf="@+id/img_receipt_comment" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView6"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/tv_receipt_total_comment"
+                                        android:layout_toEndOf="@+id/tv_receipt_total_comment" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/img_receipt_view"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/home_view"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/imageView6"
+                                        android:layout_toEndOf="@+id/imageView6" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2541"
+                                        android:layout_marginLeft="10dp"
+                                        android:textSize="12sp"
+                                        android:id="@+id/tv_receipt_total_view"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/img_receipt_view"
+                                        android:layout_toEndOf="@+id/img_receipt_view" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="145 kcal"
+                                        android:textSize="12sp"
+                                        android:id="@+id/tv_receipt_kcal"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView8"
+                                        android:layout_marginRight="8dp"
+                                        android:background="@drawable/home_kcal"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/tv_receipt_kcal"
+                                        android:layout_toStartOf="@+id/tv_receipt_kcal" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_margin="19dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Có một sự thật mà từ trước đến nay không ai có thể phủ nhận, đó là thành công nào cũng phải trả giá để có được. Ai cũng phải đánh đổi, phải vật lộn, phải chiến đấu trong một thời gian dài thì mới có thể đạt được những gì mình muốn."
+                                    android:textSize="12sp"
+                                    android:textColor="#000000"
+                                    android:id="@+id/tv_receipt_des" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/receipt_btn_nguyenlieu_press"
+                                        android:text=""
+                                        android:id="@+id/btn_receipt_nguyenlieu" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="0.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp">
+
+                                    <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/receipt_btn_chebien_normal"
+                                        android:text=""
+                                        android:id="@+id/btn_receipt_chebien" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:id="@+id/frag_content_receipt"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"></RelativeLayout>
+                            </LinearLayout>
+                    </ScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.linhminhoo.kukki.Model.ImageNetwork.FeedImageView
+            android:id="@+id/feedImage_cook_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="#ffffff"
+            android:visibility="visible"/>
+   <!--     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/img_recipe_cover_4"
+            android:id="@+id/img_cook_step" />
+            -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginTop="12dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<!--
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="2"
+            android:gravity="top|left"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:maxLines="10"
+            android:background="@drawable/edt_post_style"
+            android:id="@+id/edt_cook_step_description"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            android:hint="Miêu tả..." />
+            -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:id="@+id/tv_cook_des" />
+    </LinearLayout>
+</LinearLayout>
